@@ -23,8 +23,8 @@ module.exports = {
         },
 
         chromeHeadless : {
+            extends: 'chrome',
             desiredCapabilities: {
-                browserName: 'chrome',
                 chromeOptions: {
                     args: [ '--headless' ]
                 }
@@ -48,8 +48,8 @@ module.exports = {
         },
 
         firefoxHeadless : {
+            extends: 'firefox',
             desiredCapabilities: {
-                browserName: 'firefox',
                 alwaysMatch: {
                     'moz:firefoxOptions': {
                         args: [ '-headless' ]
