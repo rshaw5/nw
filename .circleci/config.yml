@@ -5,4 +5,5 @@ jobs:
       - image: circleci/node:13.8.0-browsers
     steps:
       - checkout
+      - run: npm install nightwatch
       - run: npm test
