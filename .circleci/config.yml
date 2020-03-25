@@ -6,4 +6,7 @@ jobs:
     steps:
       - checkout
       - run: npm install nightwatch
-      - run: npm test
+      - run: npm test -- --env chrome
+      - run: npm test -- --env firefox
+      - run: npm test -- --env chromeHeadless
+      - run: npm test -- --env firefoxHeadless
