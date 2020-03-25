@@ -5,6 +5,4 @@ jobs:
       - image: circleci/node:13.8.0-browsers
     steps:
       - checkout
-      - run:
-          name: "Test setup"
-          command: echo 'Hello world'
+      - run: npm test
